@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap')
+    
+*
+    padding: 0
+    margin: 0
+
+$DarkCyan: hsl(158, 36%, 37%)
+$Cream: hsl(30, 38%, 92%)
+
+$VeryDarkBlue: hsl(212, 21%, 14%)
+$DarkGrayishBlue: hsl(228, 12%, 48%)
+$White: hsl(0, 0%, 100%)
+
+body
+    width: 100vw
+    height: 100vh
+    background-color: $Cream
+    overflow: hidden
+
+.tarjeta
+    width: 600px
+    height: 450px
+    border-radius: 10px
+    display: flex
+    overflow: hidden
+
+img
+    width: 300px
+    display: block
+
+.tarjeta--content
+    background-color: $White
+    width: 300px
+    display: flex
+    flex-direction: column
+
+
+h3
+    text-align: left
+    margin: 28px 32px 0px 32px
+    font-family: Montserrat, sans-serif
+    font-weight: 700
+    color: $DarkGrayishBlue
+    font-size: 12px
+    letter-spacing: 5px
+
+h1
+    font-family: Fraunces, serif
+    font-size: 2rem
+    text-align: left
+    width: 200px
+    margin: 16px 32px 0px 32px
+    letter-spacing: -0.2px
+    line-height: 32px
+    color: $VeryDarkBlue
+
+p
+    font-family: Montserrat, sans-serif
+    margin: 24px 32px 0 32px
+    font-size: 14px
+    text-align: left
+    line-height: 23px
+    color: $DarkGrayishBlue
+
+
+.tarjeta--content__precio
+    border: 1px solid red
+
+
+.descuento
+    font-family: Fraunces, sans-serif
+    color: $DarkCyan
+    text-align: left
+    margin: 32px 0 0 32px
+    font-size: 2rem
+    width: 130px
+    border: 1px solid red
+    display: block
+    float: left
+
+.precio
+    width: 90px
+    display: block
+    border: 1px solid red
+    text-align: right
+    float: right
+.descuento:before, .precio:before
+    content: '$'
+

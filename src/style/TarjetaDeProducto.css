@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(30deg, 38%, 92%);
+  overflow: hidden;
+}
+
+.tarjeta {
+  width: 600px;
+  height: 450px;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+}
+
+img {
+  width: 300px;
+  display: block;
+}
+
+.tarjeta--content {
+  background-color: hsl(0deg, 0%, 100%);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  text-align: left;
+  margin: 28px 32px 0px 32px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  color: hsl(228deg, 12%, 48%);
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+
+h1 {
+  font-family: Fraunces, serif;
+  font-size: 2rem;
+  text-align: left;
+  width: 200px;
+  margin: 16px 32px 0px 32px;
+  letter-spacing: -0.2px;
+  line-height: 32px;
+  color: hsl(212deg, 21%, 14%);
+}
+
+p {
+  font-family: Montserrat, sans-serif;
+  margin: 24px 32px 0 32px;
+  font-size: 14px;
+  text-align: left;
+  line-height: 23px;
+  color: hsl(228deg, 12%, 48%);
+}
+
+.tarjeta--content__precio {
+  border: 1px solid red;
+}
+
+.descuento {
+  font-family: Fraunces, sans-serif;
+  color: hsl(158deg, 36%, 37%);
+  text-align: left;
+  margin: 32px 0 0 32px;
+  font-size: 2rem;
+  width: 130px;
+  border: 1px solid red;
+  display: block;
+  float: left;
+}
+
+.precio {
+  width: 90px;
+  display: block;
+  border: 1px solid red;
+  text-align: right;
+  float: right;
+}
+
+.descuento:before, .precio:before {
+  content: "$";
+}/*# sourceMappingURL=TarjetaDeProducto.css.map */
