@@ -95,7 +95,8 @@ button {
   height: 48px;
   color: hsl(0deg, 0%, 100%);
   font-size: 14px;
-  outline: none;
+  outline: transparent !important;
+  border: transparent;
 }
 
 button:hover {
