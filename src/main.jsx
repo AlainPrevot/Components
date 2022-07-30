@@ -19,12 +19,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     /> */}
 
     <TarjetaDeProducto
-    imagen={ProductoDesktop}
     categoria="PERFUME"
     titulo="Gabrielle Essence Eau De Parfum"
     parrafo="A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL."
     precio="169.99"
     descuento="149.99"
+    ImagenDesktop={ProductoDesktop}
+    ImagenMobile={ProductMobile}
     />
 
   </React.StrictMode>

@@ -1,12 +1,13 @@
 import './style/TarjetaDeProducto.css'
-import ImagenMobile from './assets/ProductMobile.jpg'
 
 
-const TarjetaDeProducto = ({categoria, titulo, parrafo, precio, descuento, imagen}) =>{
+const TarjetaDeProducto = ({categoria, titulo, parrafo, precio, descuento, ImagenDesktop, ImagenMobile}) =>{
+    
+    const producto = screen.width > 460 ? ImagenDesktop : ImagenMobile;
+
     return(
         <div className='tarjeta'>
-            <img src={imagen} alt="" />
-            {/* <img src={ImagenMobile} alt="" /> */}
+            <img src={producto} alt="" />
             <div className='tarjeta--content'>
                 <h3>{categoria}</h3>
                 <h1>{titulo}</h1>

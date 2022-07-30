@@ -4,172 +4,123 @@
   margin: 0;
 }
 
-@media only screen and (min-width: 460px) {
-  body {
-    width: 100vw;
-    height: 100vh;
-    background-color: hsl(30deg, 38%, 92%);
-    overflow: hidden;
-  }
-  .tarjeta {
-    width: 600px;
-    height: 450px;
-    border-radius: 10px;
-    display: flex;
-    overflow: hidden;
-  }
-  img {
-    filter: brightness(0.9);
-  }
-  .tarjeta--content {
-    background-color: hsl(0deg, 0%, 100%);
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    padding: 28px 32px 32px 32px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-  }
-  h3 {
-    text-align: left;
-    font-family: Montserrat, sans-serif;
-    font-weight: 500;
-    color: hsl(228deg, 12%, 48%);
-    font-size: 12px;
-    letter-spacing: 5px;
-  }
-  h1 {
-    font-family: Fraunces, serif;
-    font-size: 2rem;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    letter-spacing: -0.2px;
-    line-height: 32px;
-    color: hsl(212deg, 21%, 14%);
-  }
-  p {
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-    text-align: left;
-    line-height: 23px;
-    color: hsl(228deg, 12%, 48%);
-    margin: 0;
-  }
-  .tarjeta--content__precio {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-  }
-  .descuento {
-    font-family: Fraunces, sans-serif;
-    color: hsl(158deg, 36%, 37%);
-    text-align: left;
-    font-size: 2rem;
-  }
-  .precio {
-    font-size: 14px;
-    margin-left: 16px;
-    font-family: Montserrat;
-    text-decoration: line-through;
-    color: hsl(228deg, 12%, 48%);
-    font-weight: 500;
-  }
-  .descuento:before, .precio:before {
-    content: "$";
-  }
-  button {
-    background-color: hsl(158deg, 36%, 37%);
-    height: 48px;
-    color: hsl(0deg, 0%, 100%);
-    font-family: Montserrat;
-    font-size: 14px;
-  }
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(30deg, 38%, 92%);
+  overflow: hidden;
 }
+
+.tarjeta {
+  width: 600px;
+  height: 450px;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+}
+
+img {
+  filter: brightness(0.9);
+}
+
+.tarjeta--content {
+  background-color: hsl(0deg, 0%, 100%);
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 28px 32px 32px 32px;
+  box-sizing: border-box;
+}
+
+h3, p, .precio, button {
+  font-family: Montserrat, sans-serif;
+  color: hsl(228deg, 12%, 48%);
+}
+
+h1, .descuento {
+  font-family: Fraunces, serif;
+}
+
+h3 {
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  letter-spacing: -0.2px;
+  line-height: 32px;
+  color: hsl(212deg, 21%, 14%);
+}
+
+p {
+  font-size: 14px;
+  text-align: left;
+  line-height: 23px;
+  margin: 0;
+}
+
+.tarjeta--content__precio {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.descuento {
+  color: hsl(158deg, 36%, 37%);
+  text-align: left;
+  font-size: 2rem;
+}
+
+.precio {
+  font-size: 14px;
+  margin-left: 16px;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.descuento:before, .precio:before {
+  content: "$";
+}
+
+button {
+  background-color: hsl(158deg, 36%, 37%);
+  height: 48px;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 14px;
+  outline: none;
+}
+
+button:hover {
+  background-color: hsl(158deg, 36%, 24%);
+}
+
 @media only screen and (max-width: 460px) {
   body {
-    width: 100vw;
-    height: 100vh;
-    background-color: hsl(30deg, 38%, 92%);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
   }
   .tarjeta {
     height: 610px;
-    border-radius: 10px;
-    display: flex;
+    width: auto;
     flex-direction: column;
-    overflow: hidden;
   }
   img {
     width: 344px;
     height: 240px;
-    filter: brightness(0.9);
   }
   .tarjeta--content {
-    background-color: hsl(0deg, 0%, 100%);
+    width: 344px;
     height: 520px;
-    display: flex;
-    flex-direction: column;
     padding: 20px 24px 24px 24px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-  }
-  h3 {
-    text-align: left;
-    font-family: Montserrat, sans-serif;
-    font-weight: 500;
-    color: hsl(228deg, 12%, 48%);
-    font-size: 12px;
-    letter-spacing: 5px;
-  }
-  h1 {
-    font-family: Fraunces, serif;
-    font-size: 2rem;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    letter-spacing: -0.2px;
-    line-height: 32px;
-    color: hsl(212deg, 21%, 14%);
-  }
-  p {
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-    text-align: left;
-    line-height: 23px;
-    color: hsl(228deg, 12%, 48%);
-    margin: 0;
-  }
-  .tarjeta--content__precio {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-  }
-  .descuento {
-    font-family: Fraunces, sans-serif;
-    color: hsl(158deg, 36%, 37%);
-    text-align: left;
-    font-size: 2rem;
-  }
-  .precio {
-    font-size: 14px;
-    margin-left: 16px;
-    font-family: Montserrat;
-    text-decoration: line-through;
-    color: hsl(228deg, 12%, 48%);
-    font-weight: 500;
-  }
-  .descuento:before, .precio:before {
-    content: "$";
-  }
-  button {
-    background-color: hsl(158deg, 36%, 37%);
-    height: 48px;
-    color: hsl(0deg, 0%, 100%);
-    font-family: Montserrat;
-    font-size: 14px;
   }
 }/*# sourceMappingURL=TarjetaDeProducto.css.map */
