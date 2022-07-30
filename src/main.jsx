@@ -26,5 +26,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     precio="169.99"
     descuento="149.99"
     />
+
   </React.StrictMode>
 )

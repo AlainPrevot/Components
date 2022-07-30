@@ -11,79 +11,182 @@ $VeryDarkBlue: hsl(212, 21%, 14%)
 $DarkGrayishBlue: hsl(228, 12%, 48%)
 $White: hsl(0, 0%, 100%)
 
-body
-    width: 100vw
-    height: 100vh
-    background-color: $Cream
-    overflow: hidden
 
-.tarjeta
-    width: 600px
-    height: 450px
-    border-radius: 10px
-    display: flex
-    overflow: hidden
+@media only screen and (min-width: 460px)
+    body
+        width: 100vw
+        height: 100vh
+        background-color: $Cream
+        overflow: hidden
 
-img
-    width: 300px
-    display: block
+    .tarjeta
+        width: 600px
+        height: 450px
+        border-radius: 10px
+        display: flex
+        overflow: hidden
 
-.tarjeta--content
-    background-color: $White
-    width: 300px
-    display: flex
-    flex-direction: column
+    img
+        filter: brightness(0.9)
 
-
-h3
-    text-align: left
-    margin: 28px 32px 0px 32px
-    font-family: Montserrat, sans-serif
-    font-weight: 700
-    color: $DarkGrayishBlue
-    font-size: 12px
-    letter-spacing: 5px
-
-h1
-    font-family: Fraunces, serif
-    font-size: 2rem
-    text-align: left
-    width: 200px
-    margin: 16px 32px 0px 32px
-    letter-spacing: -0.2px
-    line-height: 32px
-    color: $VeryDarkBlue
-
-p
-    font-family: Montserrat, sans-serif
-    margin: 24px 32px 0 32px
-    font-size: 14px
-    text-align: left
-    line-height: 23px
-    color: $DarkGrayishBlue
+    .tarjeta--content
+        background-color: $White
+        width: 300px
+        display: flex
+        flex-direction: column
+        padding: 28px 32px 32px 32px
+        box-sizing: border-box
+        display: flex
+        justify-content: space-between
 
 
-.tarjeta--content__precio
-    border: 1px solid red
+    h3
+        text-align: left
+        font-family: Montserrat, sans-serif
+        font-weight: 500
+        color: $DarkGrayishBlue
+        font-size: 12px
+        letter-spacing: 5px
+
+    h1
+        font-family: Fraunces, serif
+        font-size: 2rem
+        text-align: left
+        width: 100%
+        margin: 0
+        letter-spacing: -0.2px
+        line-height: 32px
+        color: $VeryDarkBlue
+
+    p
+        font-family: Montserrat, sans-serif
+        font-size: 14px
+        text-align: left
+        line-height: 23px
+        color: $DarkGrayishBlue
+        margin: 0
 
 
-.descuento
-    font-family: Fraunces, sans-serif
-    color: $DarkCyan
-    text-align: left
-    margin: 32px 0 0 32px
-    font-size: 2rem
-    width: 130px
-    border: 1px solid red
-    display: block
-    float: left
+    .tarjeta--content__precio
+        width: 100%
+        height: 50px
+        display: flex
+        align-items: center 
 
-.precio
-    width: 90px
-    display: block
-    border: 1px solid red
-    text-align: right
-    float: right
-.descuento:before, .precio:before
-    content: '$'
 
+    .descuento
+        font-family: Fraunces, sans-serif
+        color: $DarkCyan
+        text-align: left
+        font-size: 2rem
+
+    .precio
+        font-size: 14px
+        margin-left: 16px
+        font-family: Montserrat
+        text-decoration: line-through
+        color: $DarkGrayishBlue
+        font-weight: 500
+
+
+    .descuento:before, .precio:before
+        content: '$'
+
+    button
+        background-color: $DarkCyan
+        height: 48px
+        color: $White
+        font-family: Montserrat
+        font-size: 14px
+    
+@media only screen and (max-width: 460px)
+
+
+    body
+        width: 100vw
+        height: 100vh
+        background-color: $Cream
+
+
+    .tarjeta
+        height: 610px
+        border-radius: 10px
+        display: flex
+        flex-direction: column
+        overflow: hidden
+
+    img
+        width: 344px
+        height: 240px
+        filter: brightness(0.9)
+
+    .tarjeta--content
+        background-color: $White
+        height: 520px
+        display: flex
+        flex-direction: column
+        padding: 20px 24px 24px 24px
+        box-sizing: border-box
+        display: flex
+        justify-content: space-between
+
+
+
+    h3
+        text-align: left
+        font-family: Montserrat, sans-serif
+        font-weight: 500
+        color: $DarkGrayishBlue
+        font-size: 12px
+        letter-spacing: 5px
+
+    h1
+        font-family: Fraunces, serif
+        font-size: 2rem
+        text-align: left
+        width: 100%
+        margin: 0
+        letter-spacing: -0.2px
+        line-height: 32px
+        color: $VeryDarkBlue
+
+    p
+        font-family: Montserrat, sans-serif
+        font-size: 14px
+        text-align: left
+        line-height: 23px
+        color: $DarkGrayishBlue
+        margin: 0
+
+
+    .tarjeta--content__precio
+        width: 100%
+        height: 50px
+        display: flex
+        align-items: center 
+
+
+    .descuento
+        font-family: Fraunces, sans-serif
+        color: $DarkCyan
+        text-align: left
+        font-size: 2rem
+
+    .precio
+        font-size: 14px
+        margin-left: 16px
+        font-family: Montserrat
+        text-decoration: line-through
+        color: $DarkGrayishBlue
+        font-weight: 500
+
+
+    .descuento:before, .precio:before
+        content: '$'
+
+    button
+        background-color: $DarkCyan
+        height: 48px
+        color: $White
+        font-family: Montserrat
+        font-size: 14px

@@ -1,10 +1,12 @@
 import './style/TarjetaDeProducto.css'
+import ImagenMobile from './assets/ProductMobile.jpg'
 
 
 const TarjetaDeProducto = ({categoria, titulo, parrafo, precio, descuento, imagen}) =>{
     return(
         <div className='tarjeta'>
             <img src={imagen} alt="" />
+            {/* <img src={ImagenMobile} alt="" /> */}
             <div className='tarjeta--content'>
                 <h3>{categoria}</h3>
                 <h1>{titulo}</h1>
