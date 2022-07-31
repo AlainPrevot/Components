@@ -11,7 +11,7 @@ const TarjetaResumenPedido = ({titulo, parrafo, precio}) => {
                 <p>{parrafo}</p>
                 <div className="tarjeta--content__precio">
                     <IconMusic className="iconMusic"/>
-                    <h2>Annual Plan</h2>
+                    <h2 className="planAnual">Annual Plan</h2>
                     <h3>{precio}</h3>
                     <a href="">Change</a>
                 </div>
