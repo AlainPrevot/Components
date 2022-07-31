@@ -7,7 +7,9 @@ import ProductoDesktop from './assets/ProductDesktop.jpg'
 import ProductMobile from './assets/ProductMobile.jpg'
 
 
-import TarjetaDeProducto from './TarjetaDeProducto'
+// import TarjetaDeProducto from './TarjetaDeProducto'
+
+import TarjetaResumenPedido from './TarjetaResumenPedido'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -18,7 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     parrafo="Scan the QR code to visit Frontend Mentor and take your coding skills to the next level"
     /> */}
 
-    <TarjetaDeProducto
+    {/* <TarjetaDeProducto
     categoria="PERFUME"
     titulo="Gabrielle Essence Eau De Parfum"
     parrafo="A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL."
@@ -26,6 +28,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     descuento="149.99"
     ImagenDesktop={ProductoDesktop}
     ImagenMobile={ProductMobile}
+    /> */}
+
+    <TarjetaResumenPedido
+    titulo="Order Summary"
+    parrafo="You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!"
+    precio="59.99"
     />
 
   </React.StrictMode>
