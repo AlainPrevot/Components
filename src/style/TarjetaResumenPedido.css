@@ -64,6 +64,7 @@ p {
   grid-row: 1/2;
   padding: 5px 0 0 5px;
   text-align: left;
+  color: hsl(223deg, 47%, 23%);
 }
 
 .tarjeta--content__precio h3 {
