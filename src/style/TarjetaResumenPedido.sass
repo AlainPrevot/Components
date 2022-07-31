@@ -25,121 +25,254 @@ $DarkBlue: hsl(223, 47%, 23%)
     margin: 0
     padding: 0
 
-body
-    width: 100vw 
-    background-color: $PaleBlue
-    background-image: url(../assets/TarjetaResumenPedido/pattern-background-desktop.svg)
-    background-repeat: repeat no-repeat
+// body
+//     width: 100vw 
+//     background-color: $PaleBlue
+//     background-image: url(../assets/TarjetaResumenPedido/pattern-background-desktop.svg)
+//     background-repeat: repeat no-repeat
 
-.tarjeta
-    background-color: $VeryPaleBlue
-    background-color: white
-    border-radius: 20px
-    overflow: hidden
-    height: 700px
+// .tarjeta
+//     background-color: $VeryPaleBlue
+//     background-color: white
+//     border-radius: 20px
+//     overflow: hidden
+//     height: 700px
 
     
-.tarjeta--content
-    width: 450px
-    height: 470px
-    display: flex
-    flex-direction: column
-    justify-content: space-evenly
-    // justify-content: space-around
-    padding: 38px 50px 34px 50px
-    box-sizing: border-box
+// .tarjeta--content
+//     width: 450px
+//     height: 470px
+//     display: flex
+//     flex-direction: column
+//     justify-content: space-evenly
+//     padding: 38px 50px 34px 50px
+//     box-sizing: border-box
     
     
-h1
-    font-weight: 900
-    font-size: 1.8rem
+// h1
+//     font-weight: 900
+//     font-size: 1.8rem
     
 
-p
-    font-weight: 500
-    font-size: 16px
-    line-height: 26px
+// p
+//     font-weight: 500
+//     font-size: 16px
+//     line-height: 26px
 
 
 
-.tarjeta--content__precio
-    height: 60px
-    display: grid
-    grid-template-columns: 1fr 180px 1fr
-    grid-template-rows: 1fr 1fr
-    border-radius: 10px
-    padding: 20px 12px 
+// .tarjeta--content__precio
+//     height: 60px
+//     display: grid
+//     grid-template-columns: 1fr 180px 1fr
+//     grid-template-rows: 1fr 1fr
+//     border-radius: 10px
+//     padding: 20px 12px 
 
-    background-color: $VeryPaleBlue
-    // justify-content: space-evenly
+//     background-color: $VeryPaleBlue
 
-.prueba
-    grid-column: 1 / 2
-    grid-row: 1 / 3
-    margin: 6px auto
+// .prueba
+//     grid-column: 1 / 2
+//     grid-row: 1 / 3
+//     margin: 6px auto
 
-.tarjeta--content__precio h2
-    grid-column: 2/3
-    grid-row: 1/2
-    font-size: 16px
-    text-align: left
-    padding: 5px 0 0 5px
-    box-sizing: border-box
-    font-weight: 900
-    font-family: Red Hat Display, sans-serif
+// .tarjeta--content__precio h2
+//     grid-column: 2/3
+//     grid-row: 1/2
+//     font-size: 16px
+//     text-align: left
+//     padding: 5px 0 0 5px
+//     box-sizing: border-box
+//     font-weight: 900
+//     font-family: Red Hat Display, sans-serif
 
-.tarjeta--content__precio h3 
-    grid-column: 2/3
-    grid-row: 2/3
-    font-weight: 500
-    color: $DesaturatedBlue
-    font-size: 16px
-    text-align: left
-    padding: 2px 0 0 5px
-    box-sizing: border-box
+// .tarjeta--content__precio h3 
+//     grid-column: 2/3
+//     grid-row: 2/3
+//     font-weight: 500
+//     color: $DesaturatedBlue
+//     font-size: 16px
+//     text-align: left
+//     padding: 2px 0 0 5px
+//     box-sizing: border-box
 
-.tarjeta--content__precio h3:before
-    content: '$'
+// .tarjeta--content__precio h3:before
+//     content: '$'
 
-.tarjeta--content__precio h3:after
-    content: '/year'
-.tarjeta--content__precio a
-    grid-column: 3 / 4
-    grid-row: 1/3
-    padding-top: 18px 
-    font-size: 14px
-    font-weight: 900
-    text-decoration: underline
-    color: $BrightBlue
-
+// .tarjeta--content__precio h3:after
+//     content: '/year'
+// .tarjeta--content__precio a
+//     grid-column: 3 / 4
+//     grid-row: 1/3
+//     padding-top: 18px 
+//     font-size: 14px
+//     font-weight: 900
+//     text-decoration: underline
+//     color: $BrightBlue
 
 
-.ProcedeCompra
-    margin-top: 34px
-    height: 50px
-    background-color: $BrightBlue
-    color: white
-    font-size: 14px
-    font-weight: 700
-    letter-spacing: 0.4px
-    box-shadow: 0 10px 30px 0 hsl(245, 75%, 80%)
 
-.ProcedeCompra:hover
-    background-color: $hover 
+// .ProcedeCompra
+//     margin-top: 34px
+//     height: 50px
+//     background-color: $BrightBlue
+//     color: white
+//     font-size: 14px
+//     font-weight: 700
+//     letter-spacing: 0.4px
+//     box-shadow: 0 10px 30px 0 hsl(245, 75%, 80%)
 
-.tarjeta--content__precio a:hover
-    text-decoration: none
-    color: $hover
+// .ProcedeCompra:hover
+//     background-color: $hover 
 
-.CancelaCompra
-    font-size: 14px
-    letter-spacing: 0.4px
-    font-weight: 700
-    height: 50px
-    background-color: transparent
-    color: $DesaturatedBlue
-    outline: transparent !important
+// .tarjeta--content__precio a:hover
+//     text-decoration: none
+//     color: $hover
 
-.CancelaCompra:hover
-    border: transparent
-    color: $DarkBlue
+// .CancelaCompra
+//     font-size: 14px
+//     letter-spacing: 0.4px
+//     font-weight: 700
+//     height: 50px
+//     background-color: transparent
+//     color: $DesaturatedBlue
+//     outline: transparent !important
+
+// .CancelaCompra:hover
+//     border: transparent
+//     color: $DarkBlue
+
+
+@media only screen and (max-width: 460px)
+
+    body
+        width: 100vw
+        height: 100vh
+        background-color: $PaleBlue
+        background-image: none
+
+        
+    .tarjeta
+        background-color: $VeryPaleBlue
+        background-color: white
+        border-radius: 20px
+        overflow: hidden
+        height: 566px
+        width: 324px
+        position: relative
+
+    .imagen
+        height: 210px
+        transform: scale(0.8)
+        position: absolute
+        left: -65px
+        top: -30px
+            
+    .tarjeta--content
+        width: 324px
+        height: 404px
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        // padding: 38px 50px 34px 50px
+        padding: 20px 22px 10px 22px
+        box-sizing: border-box
+        position: absolute
+        // top: -30px
+        bottom: 0px
+        
+        
+    h1
+        font-weight: 900
+        font-size: 1.3rem
+        
+
+    p
+        font-weight: 500
+        font-size: 15px
+        line-height: 26px
+
+
+
+    .tarjeta--content__precio
+        height: 80px
+        display: grid
+        grid-template-columns: 1fr 140px 1fr
+        grid-template-rows: 1fr 1fr
+        border-radius: 10px
+        padding: 12px 12px
+        box-sizing: border-box
+
+        background-color: $VeryPaleBlue
+
+
+    .prueba
+        grid-column: 1 / 2
+        grid-row: 1 / 3
+        margin: 6px auto
+
+    .tarjeta--content__precio h2
+        grid-column: 2/3
+        grid-row: 1/2
+        font-size: 16px
+        text-align: left
+        padding: 5px 0 0 5px
+        box-sizing: border-box
+        font-weight: 900
+        font-family: Red Hat Display, sans-serif
+
+    .tarjeta--content__precio h3 
+        grid-column: 2/3
+        grid-row: 2/3
+        font-weight: 500
+        color: $DesaturatedBlue
+        font-size: 16px
+        text-align: left
+        padding: 2px 0 0 5px
+        box-sizing: border-box
+
+    .tarjeta--content__precio h3:before
+        content: '$'
+
+    .tarjeta--content__precio h3:after
+        content: '/year'
+    .tarjeta--content__precio a
+        grid-column: 3 / 4
+        grid-row: 1/3
+        padding-top: 18px 
+        font-size: 14px
+        font-weight: 900
+        text-decoration: underline
+        color: $BrightBlue
+
+
+
+    .ProcedeCompra
+        margin-top: 20px
+        height: 50px
+        background-color: $BrightBlue
+        color: white
+        font-size: 14px
+        font-weight: 700
+        letter-spacing: 0.4px
+        box-shadow: 0 10px 20px 0 hsl(245, 75%, 80%)
+
+    .ProcedeCompra:hover
+        background-color: $hover 
+
+    .tarjeta--content__precio a:hover
+        text-decoration: none
+        color: $hover
+
+    .CancelaCompra
+        font-size: 14px
+        letter-spacing: 0.4px
+        font-weight: 700
+        height: 50px
+        background-color: transparent
+        color: $DesaturatedBlue
+        outline: transparent !important
+
+    .CancelaCompra:hover
+        border: transparent
+        color: $DarkBlue

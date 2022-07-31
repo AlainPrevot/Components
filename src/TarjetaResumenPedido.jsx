@@ -5,7 +5,7 @@ const TarjetaResumenPedido = ({titulo, parrafo, precio}) => {
     return(
 
         <div className="tarjeta">
-            <IllustrationHero/>
+            <IllustrationHero className="imagen"/>
             <div className="tarjeta--content">
                 <h1 id="prueba" >{titulo}</h1>
                 <p>{parrafo}</p>
