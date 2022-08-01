@@ -1,0 +1,11 @@
+.tarjeta {
+  width: 370px;
+  height: 700px;
+  background-color: hsl(215deg, 32%, 27%);
+}
+
+.imagen {
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+}/*# sourceMappingURL=TarjetaNFT.css.map */

@@ -9,7 +9,10 @@ import ProductMobile from './assets/ProductMobile.jpg'
 
 // import TarjetaDeProducto from './TarjetaDeProducto'
 
-import TarjetaResumenPedido from './TarjetaResumenPedido'
+// import TarjetaResumenPedido from './TarjetaResumenPedido'
+
+
+import TarjetaNFT from './TarjetaNFT'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -30,10 +33,18 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     ImagenMobile={ProductMobile}
     /> */}
 
-    <TarjetaResumenPedido
+    {/* <TarjetaResumenPedido
     titulo="Order Summary"
     parrafo="You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!"
     precio="59.99"
+    /> */}
+
+    <TarjetaNFT
+    titulo="Equilibrium #3429"
+    parrafo="Our Equilibrium collection promotes balance and calm."
+    precio="0.041 ETH"
+    tiempo="3 days left"
+    autor="Jules Wyvern"
     />
 
   </React.StrictMode>
