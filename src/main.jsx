@@ -1,10 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
-import CodigoQR from './CodigoQR'
+// import './index.css'
+// import CodigoQR from './CodigoQR'
 import CodeQR from './assets/CodeQR.png'
 import ProductoDesktop from './assets/ProductDesktop.jpg'
 import ProductMobile from './assets/ProductMobile.jpg'
+
+
 
 
 // import TarjetaDeProducto from './TarjetaDeProducto'
@@ -12,7 +14,9 @@ import ProductMobile from './assets/ProductMobile.jpg'
 // import TarjetaResumenPedido from './TarjetaResumenPedido'
 
 
-import TarjetaNFT from './TarjetaNFT'
+// import TarjetaNFT from './TarjetaNFT'
+
+import PaginaInicio from './page/inicio'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -39,13 +43,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     precio="59.99"
     /> */}
 
-    <TarjetaNFT
+    {/* <TarjetaNFT
     titulo="Equilibrium #3429"
     parrafo="Our Equilibrium collection promotes balance and calm."
     precio="0.041 ETH"
     tiempo="3 days left"
     autor="Jules Wyvern"
-    />
+    /> */}
+
+    <PaginaInicio/>
 
   </React.StrictMode>
 )
