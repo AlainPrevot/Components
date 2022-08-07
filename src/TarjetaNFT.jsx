@@ -7,14 +7,19 @@ import './style/TarjetaNFT.css'
 const TarjetaNFT = ({titulo, parrafo, precio, tiempo, autor}) => {
     return(
         <div className='tarjeta'>
-            <img className='imagen' src="./assets/TarjetaNFT/image-equilibrium.jpg" alt="imageEquilibrium" />
-            <h1>{titulo}</h1>
-            <p>{parrafo}</p>
-            <div>
-                <h3>{precio}</h3>
-                <h3>{tiempo}</h3>
+            <img className='imagen' src="../src/assets/TarjetaNFT/image-equilibrium.jpg" alt="imageEquilibrium" />
+            <div className='tarjeta--content'>
+                <a className='titulo'>{titulo}</a>
+                <p>{parrafo}</p>
+                <div>
+                    <h3>{precio}</h3>
+                    <h3>{tiempo}</h3>
+                </div>
             </div>
-            <h2>{autor}</h2>
+            <div className='content--user'>
+                <img className='avatar' src="../src/assets/TarjetaNFT/image-avatar.png" alt="" />
+                <h2>Creation of <a href="">{autor}</a></h2>
+            </div>
         </div>
     );
 };
