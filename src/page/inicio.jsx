@@ -5,17 +5,17 @@ import './style/inicio.css'
 
 const PaginaInicio = () => {
     return(
-        <div className='content'>
-            <h1>Components</h1>
+        <>
+            <h1>Desarrollo de Componentes con React</h1>
             <p>Estos son algunos de los componentes que desarrolle</p>
             <div className='content--components'>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div className='prueba'> </div>
+                <div className='prueba'> </div>
+                <div className='prueba'> </div>
+                <div className='prueba'> </div>
+                <div className='prueba'> </div>
             </div>
-        </div>
+        </>
     )
 }
 
