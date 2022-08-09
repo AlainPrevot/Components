@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap')
 
-$PaleBlue: hsl(225, 100%, 94%)
 $BrightBlue: hsl(245, 75%, 52%)
 $hover: hsl(245, 75%, 62%)
 
@@ -8,24 +7,24 @@ $VeryPaleBlue: hsl(225, 100%, 98%)
 $DesaturatedBlue: hsl(224, 23%, 55%)
 $DarkBlue: hsl(223, 47%, 23%)
 
+
+
+
 *
     font-family: Red Hat Display, sans-serif
-    margin: 0
+    margin: 0 auto
     padding: 0
+    text-align: center
 
-body
-    background-color: $PaleBlue
-    background-image: url(../assets/TarjetaResumenPedido/pattern-background-desktop.svg)
-    background-repeat: repeat no-repeat
-    width: 100vw 
 
-.tarjeta
+
+.card
     background-color: white
     border-radius: 20px
     height: 700px
     overflow: hidden
 
-.tarjeta--content
+.card--content
     box-sizing: border-box
     display: flex
     flex-direction: column
@@ -44,35 +43,35 @@ p
         size: 1rem
         weight: 500
     line-height: 26px
+    color: $DesaturatedBlue
 
-.tarjeta--content__precio
+.card--price
     background-color: $VeryPaleBlue
     border-radius: 10px
     display: grid
     grid-template-columns: 1fr 180px 1fr
     grid-template-rows: 1fr 1fr
     height: 60px
-    padding: 20px 12px 
+    padding: 20px 30px 
+    margin-top: 10px
 
-.iconMusic
+.card--price__iconMusic
     grid-column: 1 / 2
     grid-row: 1 / 3
     margin: 6px auto
 
-.tarjeta--content__precio h2
-    box-sizing: border-box
+.card--price > h2
     font: 
         size: 1rem
         weight: 900
     grid-column: 2/3
     grid-row: 1/2
-    padding: 5px 0 0 5px
+    padding: 5px 0 0 16px
     text-align: left
-
-.planAnual
+    width: 100%
     color: $DarkBlue
 
-.tarjeta--content__precio h3 
+.card--price > h3 
     box-sizing: border-box
     color: $DesaturatedBlue
     font: 
@@ -80,16 +79,17 @@ p
         weight: 500
     grid-column: 2/3
     grid-row: 2/3
-    padding: 2px 0 0 5px
+    padding: 2px 0 0 16px
     text-align: left
+    width: 100%
 
-.tarjeta--content__precio h3:before
+.card--price > h3:before
     content: '$'
 
-.tarjeta--content__precio h3:after
+.card--price > h3:after
     content: '/year'
 
-.tarjeta--content__precio a
+.card--price > a
     color: $BrightBlue
     font:  
         size: 14px
@@ -99,12 +99,20 @@ p
     padding-top: 18px 
     text-decoration: underline
 
-.ProcedeCompra, .CancelaCompra
+.card--price > a:hover
+    text-decoration: none
+    color: $hover
+    
+.card--content__btnProceed, .card--content__btnCancel
+    border-radius: 8px
+    border: 1px solid transparent
+    cursor: pointer
     font:  
         size: 14px
         weight: 700
 
-.ProcedeCompra
+.card--content__btnProceed
+    width: 100%
     background-color: $BrightBlue
     box-shadow: 0 10px 30px 0 hsl(245, 75%, 80%)
     color: white
@@ -112,42 +120,36 @@ p
     letter-spacing: 0.4px
     margin-top: 34px
 
-.ProcedeCompra:hover
+.card--content__btnProceed:hover
     background-color: $hover 
 
-.tarjeta--content__precio a:hover
-    text-decoration: none
-    color: $hover
-
-.CancelaCompra
+.card--content__btnCancel
     background-color: transparent
     color: $DesaturatedBlue
     height: 50px
     letter-spacing: 0.4px
     outline: transparent !important
 
-.CancelaCompra:hover
+.card--content__btnCancel:hover
     border: transparent
     color: $DarkBlue
 
 
 @media only screen and (max-width: 460px)
 
-    body
-        background-image: none
 
-    .tarjeta
+    .card
         height: 566px
         position: relative
         width: 324px
 
-    .imagen
+    .card--image
         left: -65px
         position: absolute
         top: -30px
         transform: scale(0.8)
             
-    .tarjeta--content
+    .card--content
         bottom: 0px
         height: 404px
         padding: 20px 22px 10px 22px
@@ -160,12 +162,12 @@ p
     p
         font-size: 15px
 
-    .tarjeta--content__precio
+    .card--price
         box-sizing: border-box
         grid-template-columns: 1fr 140px 1fr
         height: 80px
         padding: 12px 12px
 
-    .ProcedeCompra
+    .card--content__btnProceed
         box-shadow: 0 10px 20px 0 hsl(245, 75%, 80%)
         margin-top: 20px

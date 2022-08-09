@@ -8,16 +8,19 @@ import ProductMobile from './assets/ProductMobile.jpg'
 
 
 
+import Page__TarjetaResumenPedido from './pages/Page__TarjetaResumenPedido'
+
+
 
 // import TarjetaDeProducto from './TarjetaDeProducto'
 
-// import TarjetaResumenPedido from './TarjetaResumenPedido'
 
 
 // import TarjetaNFT from './TarjetaNFT'
 
-import PaginaInicio from './page/inicio'
+// import PaginaInicio from './page/inicio'
 
+import {MenuDesplegable} from './MenuDesplegable'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -42,6 +45,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     parrafo="You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!"
     precio="59.99"
     /> */}
+    {/* <MenuDesplegable/>  */}
+
+    <Page__TarjetaResumenPedido/>
 
     {/* <TarjetaNFT
     titulo="Equilibrium #3429"
@@ -51,7 +57,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     autor="Jules Wyvern"
     /> */}
 
-    <PaginaInicio/>
+    {/* <PaginaInicio/> */}
 
   </React.StrictMode>
 )
