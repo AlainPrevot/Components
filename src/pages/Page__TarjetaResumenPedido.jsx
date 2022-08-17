@@ -1,11 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-import './style/Page__TarjetaResumenPedido.css'
+import './style/Page__TarjetaResumenPedido.css';
 
-import TarjetaResumenPedido from '../assets/Components/TarjetaResumenPedido'
+import TarjetaResumenPedido from '../assets/Components/TarjetaResumenPedido';
 
-
+    // Esto hay que eliminarlo
 
     {/* <TarjetaResumenPedido
     titulo="Order Summary"
@@ -22,7 +22,7 @@ const Page_TarjetaResumenPedido = () => {
         description="Ahora puede escuchar millones de canciones, audiolibros y podcasts en cualquier dispositivo y en cualquier lugar que desee!"
         price="59.99"
         />
-    )
-}
+    );
+};
 
-export default Page_TarjetaResumenPedido
+export default Page_TarjetaResumenPedido;

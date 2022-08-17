@@ -1,143 +1,134 @@
-// - Font size (paragraph): 18px
-
-// ### Font
-
-// - Family: [Outfit](https://fonts.google.com/specimen/Outfit)
-// - Weights: 300, 400, 600
-
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap')
+
 $SoftBlue: hsl(215, 51%, 70%)
 $Cyan: hsl(178, 100%, 50%)
-
-
-$VeryDarkBlue1: hsl(217, 54%, 11%)
-$VeryDarkBlue2: hsl(216, 50%, 16%)
-$VeryDarkBlue3: hsl(215, 32%, 27%)
+$VeryDarkBlue: hsl(216, 50%, 16%)
 $White: hsl(0, 0%, 100%)
 
+
 *
-    margin: 0
-    padding: 0
     font-family: 'Outfit', sans-serif
-
-body
-    background-color: $VeryDarkBlue1
-    margin: 0
+    margin: 0 
     padding: 0
 
-.tarjeta
-    background-color: $VeryDarkBlue2
+.card
+    background-color: $VeryDarkBlue
     border-radius: 20px
     box-sizing: border-box
-    height: 600px
+    height: 590px
     padding: 24px 22px
     width: 350px
 
-.imagen
+.card--image
     border-radius: 10px
     width:300px
 
-.tarjeta--content
-    border-bottom: 1px solid $SoftBlue 
+.card--content
     display: flex
     flex-direction: column
     height: 188px
     justify-content: space-evenly
     padding: 0 2px
 
-.titulo
-    color: $White
-    font: 
-        size: 1.2rem
-        weight: 600
-    letter-spacing: 1px
-    margin:0
-    text-align: left
-    width:100%
-a:hover
-    color: $Cyan
-    cursor: pointer
+    a
+        color: $White
+        font: 
+            size: 1.2rem
+            weight: 600
+        letter-spacing: 1px
+        margin:0
+        text-align: left
+        width:100%
+    a:hover
+        color: $Cyan
+        cursor: pointer
 
-p
-    color: $SoftBlue
-    font: 
-        size: 1.1rem
-        weight: 400
-    line-height: 26px
-    margin: 0
-    text-align: left
-    width: 100%
+    p
+        color: $SoftBlue
+        font: 
+            size: 1.1rem
+            weight: 400
+        line-height: 26px
+        margin: 0
+        text-align: left
+        width: 100%
 
-.tarjeta--content div
-    align-items: center
-    box-sizing: border-box
+    div
+        align-items: center
+        box-sizing: border-box
+        display: flex
+        justify-content: space-between
+        padding: 2px 2px 2px 18px
+        width: 100%
+
+        h3:first-child 
+            color: $Cyan
+            font: 
+                size: 1rem
+                weight: 400
+            position: relative
+            top: 8px
+
+        h3:first-child:before
+            background-image: url('../src/assets/TarjetaNFT/icon-ethereum.svg')
+            content: ''
+            height: 19px
+            left: -17px
+            position: absolute
+            width: 11px
+
+        h3:last-child
+            color: $SoftBlue
+            font: 
+                size: 1rem
+                weight: 400
+            position: relative
+            top: 8px
+
+        h3:last-child:before
+            background-image: url('../src/assets/TarjetaNFT/icon-clock.svg')
+            content: ''
+            height: 18px
+            position: absolute
+            right: 104px
+            top: 2px
+            width: 16px
+
+.card--content__user
+    border-top: 1px solid $SoftBlue
     display: flex
-    justify-content: space-between
-    padding: 2px 2px 2px 18px
-    width: 100%
 
-.tarjeta--content div h3:first-child  
-    color: $Cyan
-    font: 
-        size: 1rem
-        weight: 400
-    position: relative
+    .avatar
+        border-radius: 50%
+        border: 1px solid $White
+        height: 30px
+        margin-left: 2px
+        margin-top: 14px
+        width: 30px
 
-.tarjeta--content div h3:first-child:before
-    background-image: url('../src/assets/TarjetaNFT/icon-ethereum.svg')
-    content: ''
-    height: 19px
-    left: -17px
-    position: absolute
-    top: 2px
-    width: 11px
+    h2
+        color: $SoftBlue
+        font: 
+            size: 1rem
+            weight: 400
+        margin-left: 16px
+        margin-top: 16px
+        text-align: left
 
-.tarjeta--content div h3:last-child
-    color: $SoftBlue
-    font: 
-        size: 1rem
-        weight: 400
-    position: relative
-
-.tarjeta--content div h3:last-child:before
-    background-image: url('../src/assets/TarjetaNFT/icon-clock.svg')
-    content: ''
-    height: 18px
-    position: absolute
-    right: 82px
-    top: 4px
-    width: 16px
-
-.content--user
-    border-top: 1px solid $White
-    display: flex
-
-.avatar
-    border-radius: 50%
-    border: 1px solid $White
-    height: 30px
-    margin-left: 2px
-    margin-top: 14px
-    width: 30px
-
-h2
-    color: $SoftBlue
-    font: 
-        size: 1rem
-        weight: 400
-    margin-left: 16px
-    margin-top: 16px
-    text-align: left
-
-h2 a
-    color: white
+        a
+            color: white
+            text-decoration: none
+        
+        a:hover
+            color: $Cyan
+            cursor: pointer
 
  
 @media only screen and (max-width: 420px)
 
-    .tarjeta
-        height: 560px
+    .card
+        height: 550px
         width: 300px
 
-    .imagen
-        width: 260px
+        .card--image
+            width: 260px

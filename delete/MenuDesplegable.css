@@ -1,0 +1,143 @@
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  right: 0 !important;
+}
+
+.menu__btn {
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 26px;
+  padding: 10px 0;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 26px;
+  z-index: 1;
+}
+
+.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+  background-color: #616161;
+  display: block;
+  height: 2px;
+  position: absolute;
+  transition-duration: 0.3s;
+  width: 100%;
+}
+
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: "";
+  top: 9px;
+}
+
+.menu__box {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: block;
+  height: 100%;
+  margin: 0;
+  padding: 100px 20px;
+  position: fixed;
+  right: -100%;
+  top: 0;
+  transition: 0.3s;
+  width: 300px;
+}
+.menu__box h1 {
+  color: white;
+  font-size: 2.2rem;
+  margin-bottom: 6%;
+}
+.menu__box input {
+  height: 10%;
+  overflow: visible;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.menu__box textarea, .menu__box input {
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+  height: 32px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 6px;
+  resize: none;
+}
+.menu__box #description {
+  min-height: 100px;
+  resize: vertical;
+}
+.menu__box label {
+  color: white;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 20px;
+  padding: 0 2%;
+  text-align: left;
+  width: 96%;
+}
+.menu__box select {
+  border-radius: 6px;
+  height: 32px;
+  padding: 2px 10px;
+}
+
+.contenedor-precio {
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  grid-template-rows: 1fr 1fr;
+}
+
+#price, select {
+  grid-row: 2/3;
+  max-width: 20px;
+  min-width: 90px;
+}
+
+#price, .title {
+  grid-column: 1/2;
+  min-width: 100%;
+}
+
+select, .item {
+  grid-column: 2/3;
+}
+
+.label-price, .label-moneda, .label-title, .label-item {
+  grid-row: 1/2;
+}
+
+.label-price, .label-title {
+  grid-column: 1/2;
+}
+
+.label-moneda, .label-item {
+  grid-column: 2/3;
+}
+
+@media only screen and (max-width: 420px) {
+  .menu__box {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}/*# sourceMappingURL=MenuDesplegable.css.map */

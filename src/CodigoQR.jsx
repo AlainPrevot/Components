@@ -1,3 +1,5 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import './style/CodigoQR.css'
 import PropTypes from 'prop-types';
 
@@ -14,8 +16,8 @@ const CodigoQR = ({title, parrafo, image}) => {
 export default CodigoQR;
 
 
-CodigoQR.propTypes = {
-    image: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    parrafo: PropTypes.string.isRequired
-}
+// CodigoQR.propTypes = {
+//     image: PropTypes.string.isRequired,
+//     title: PropTypes.string.isRequired,
+//     parrafo: PropTypes.string.isRequired
+// }

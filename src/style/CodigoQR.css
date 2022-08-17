@@ -5,13 +5,6 @@
   font-family: Outfit, sans-serif;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-  background-color: hsl(212deg, 45%, 89%);
-  overflow: hidden;
-}
-
 .content {
   width: 320px;
   height: 496px;

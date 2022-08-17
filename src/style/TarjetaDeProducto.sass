@@ -6,20 +6,13 @@
 
 $DarkCyan: hsl(158, 36%, 37%)
 $BotonHover: hsl(158, 36%, 24%)
-$Cream: hsl(30, 38%, 92%)
+
 
 $VeryDarkBlue: hsl(212, 21%, 14%)
 $DarkGrayishBlue: hsl(228, 12%, 48%)
 $White: hsl(0, 0%, 100%)
 
-
-body
-    width: 100vw
-    height: 100vh
-    background-color: $Cream
-    overflow: hidden
-
-.tarjeta
+.card
     width: 600px
     height: 450px
     border-radius: 10px
@@ -27,9 +20,11 @@ body
     overflow: hidden
 
 img
+    max-width: 300px
     filter: brightness(0.9)
+    object-fit: cover
 
-.tarjeta--content
+.card--content
     background-color: $White
     width: 300px
     display: flex
@@ -38,11 +33,11 @@ img
     padding: 28px 32px 32px 32px
     box-sizing: border-box
 
-h3, p, .precio, button
+h3, p, .price, button
     font-family: Montserrat, sans-serif
     color: $DarkGrayishBlue
 
-h1, .descuento
+h1, .discount
     font-family: Fraunces, serif
 
 h3
@@ -67,26 +62,26 @@ p
     margin: 0
 
 
-.tarjeta--content__precio
+.card--content__price
     width: 100%
     height: 50px
     display: flex
     align-items: center 
 
 
-.descuento
+.discount
     color: $DarkCyan
     text-align: left
     font-size: 2rem
 
-.precio
+.price
     font-size: 14px
     margin-left: 16px
     text-decoration: line-through
     font-weight: 500
 
 
-.descuento:before, .precio:before
+.discount:before, .price:before
     content: '$'
 
 button
@@ -94,6 +89,7 @@ button
     height: 48px
     color: $White
     font-size: 14px
+    border-radius: 8px
     
     outline: transparent !important //hace transparente el borde negro del boton
     border: transparent //Hace transparente el borde azul del boton
@@ -106,23 +102,16 @@ button:hover
 @media only screen and (max-width: 460px)
 
 
-    body
-        width: 100%
-        height: 100%
-        overflow: auto
-        box-sizing: border-box
-
-
-    .tarjeta
+    .card
         height: 610px
         width: auto
         flex-direction: column
 
     img
-        width: 344px
+        max-width: 344px
         height: 240px
 
-    .tarjeta--content
+    .card--content
         width: 344px
         height: 520px
         padding: 20px 24px 24px 24px
