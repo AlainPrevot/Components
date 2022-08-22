@@ -92,6 +92,7 @@ button {
   color: hsl(0deg, 0%, 100%);
   font-size: 14px;
   border-radius: 8px;
+  cursor: pointer;
   outline: transparent !important;
   border: transparent;
 }

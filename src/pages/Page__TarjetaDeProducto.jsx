@@ -7,23 +7,28 @@ import ProductMobile from '../assets/TarjetaProducto/ProductMobile.jpg'
 
 import TarjetaDeProducto from '../assets/Components/TarjetaDeProducto'
 import './style/Page__TarjetaDeProducto.css'
+import Menu__TarjetaDeProducto from '../assets/Components/Menu__TarjetaDeProducto';
 
 
 const Page__TarjetaDeProducto = () => {
 
-    const [categoryNew, setCategoryNew] = useState('PERFUME');
-    const [titleNew, setTitleNew] = useState('Gabrielle Esencia Eau De Parfum');
-    const [descriptionNew, setDescriptionNew] = useState('Una interpretación floral, solar y voluptuosa compuesta por Olivier Polge, Perfumista-Creador de la Casa CHANEL.');
-    const [priceNew, setPriceNew] = useState(169.99);
-    const [discountNew, setDiscountNew] = useState(149.99);
     const [imageDesktopNew, setImageDesktopNew] = useState(ProductoDesktop);
     const [imageMobileNew, setImageMobileNew] = useState(ProductMobile);
-    
-    const ModifyText = (modify, element) => {
+    const [values, setValues] = useState({
+        category: 'PERFUME',
+        title: 'Gabrielle Esencia Eau De Parfum',
+        description: 'Una interpretación floral, solar y voluptuosa compuesta por Olivier Polge, Perfumista-Creador de la Casa CHANEL.',
+        price: 169.99,
+        discount: 149.99
+    })
 
-        modify(document.getElementById(element).value);
-
+    const handleChange = e => {
+        setValues({
+            ...values,
+            [e.target.name]: e.target.value
+        })
     }
+
 
     const ModifyImage = () => {
 
@@ -35,58 +40,22 @@ const Page__TarjetaDeProducto = () => {
         setImageDesktopNew(objectURL)
     }
 
-
     return(
         <>
             <TarjetaDeProducto
-                category={categoryNew}
-                title={titleNew}
-                description={descriptionNew}
-                price={priceNew}
-                discount={discountNew}
+                category={values.category}
+                title={values.title}
+                description={values.description}
+                price={parseFloat(values.price)}
+                discount={parseFloat(values.discount)}
                 ImagenDesktop={imageDesktopNew}
                 ImagenMobile={imageMobileNew}
             />
 
-            <div className='hamburger-menu'>
-                <input type="checkbox" id="menu__toggle" />
-                <label htmlFor="menu__toggle" className='menu__btn'>
-                    <span></span>
-                </label>
-                <div className='menu__box'>
-
-                    <h1>Modo Edición</h1>
-
-                    <label htmlFor="inputImagen" className='label-category'>Producto</label>
-                    <label htmlFor="inputImagen" className='label-inputImagen' id='label-inputImagen'>Seleccionar Archivo</label>
-                    <input accept='image/*' id='inputImagen' type="file" onChange={ModifyImage}/>
-
-                    <label htmlFor="category" className='label-category'>Categoría</label>
-                    <select onChange={() => ModifyText(setCategoryNew, 'category')} name="category" id="category">
-                        <option value="PERFUME">PERFUME</option>
-                        <option value="CALZADO">CALZADO</option>
-                        <option value="MAQUILLAJE">MAQUILLAJE</option>
-                        <option value="LABIAL">LABIAL</option>
-                    </select>
-
-                    <label htmlFor="title" className='label-title'>Titulo</label>
-                    <textarea onChange={() => ModifyText(setTitleNew, 'title')} id='title'  className='title' placeholder={titleNew} />
-
-                    <label htmlFor="description">Descripción</label>
-                    <textarea onChange={() => ModifyText(setDescriptionNew, 'description')} id='description' className='description' placeholder={descriptionNew} />
-
-                    <div className='menu__box--content'>
-
-                        <label htmlFor="discount" className='label-discount'>Descuento</label>
-                        <input onChange={() => ModifyText(setDiscountNew, 'discount')} id='discount' className='discount' type="number" value={discountNew} /> 
-
-                        <label htmlFor="price" className='label-price'>Precio</label>
-                        <input onChange={() => ModifyText(setPriceNew, 'price')} id='price' className='price' type="number" value={priceNew} />
-
-                    </div>
-
-                </div>
-            </div>
+            <Menu__TarjetaDeProducto
+                PropNew={handleChange}
+                ImageNew={ModifyImage}
+            />
         </>
     );
 };

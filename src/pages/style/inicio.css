@@ -11,59 +11,69 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f2f2f2;
+  background-color: #FBFEFB;
   position: relative;
+}
+body h1, body p {
+  text-align: center;
+}
+body h1 {
+  font-size: 2rem;
+}
+body p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  font-weight: bold;
 }
 
 .content {
-  width: 90vw;
-  height: 76vh;
-  background-color: white;
-  padding: 10px 30px;
-  box-sizing: border-box;
-}
-
-h1, p {
-  text-align: center;
-}
-
-.content--components {
-  height: 70vh;
+  height: 68vh;
   width: 60%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-
-.content--components div {
-  width: 400px;
+.content a {
+  width: 420px;
   transition: all 500ms;
   margin: 6px;
   border-radius: 14px;
 }
-
-.content--components div:hover {
+.content a:hover {
   transform: scale(1.05);
 }
-
-.content--components div:first-child {
+.content a:first-child {
   grid-column: 1/2;
   grid-row: 1/3;
 }
 
-iframe {
-  transition: all 500ms;
-}
-
-iframe:hover {
-  transform: scale(1.05);
-}
-
-.prueba {
-  background-image: url("./prueba.png");
-  -o-object-fit: cover;
-     object-fit: cover;
+.content__components {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.content__components:nth-child(1) {
+  background-image: url("./Nueva carpeta/Foto__TarjetaCompra8.jpg");
+}
+
+.content__components:nth-child(2) {
+  background-image: url("./Nueva carpeta/Foto__CodigoQR2.jpg");
+}
+
+.content__components:nth-child(3) {
+  background-image: url("./Nueva carpeta/Foto__TarjetaProducto3.jpg");
+}
+
+.content__components:nth-child(4) {
+  background-image: url("./Nueva carpeta/Foto__TarjetaNFT8.jpg");
+}
+
+.content__components:nth-child(5) {
+  text-align: center;
+  padding-top: 30%;
+  font-size: 2rem;
+  border: 2px solid white;
+  color: #5a5858;
 }/*# sourceMappingURL=inicio.css.map */
