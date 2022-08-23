@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import './style/inicio.css';
+// import './style/inicio.css';
+import './style/Page__Inicio.css';
 
 const PaginaInicio = () => {
     return(
