@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import './style/Page__TarjetaResumenPedido.css';
+// import './style/Page__TarjetaResumenPedido.sass';
+
+import styles from './style/Page__TarjetaResumenPedido.module.sass'
+import prueba from './style/prueba.module.css'
 
 import TarjetaResumenPedido from '../assets/Components/TarjetaResumenPedido';
 
