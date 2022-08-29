@@ -3,21 +3,24 @@ import ReactDOM from 'react-dom/client';
 
 import { Link } from "react-router-dom";
 
-// import './style/inicio.css';
-import Page__InicioStyle from './style/Page__Inicio.module.sass';
-console.log(Page__InicioStyle)
+import StylePage__Inicio from './style/Page__Inicio.module.sass';
+import Fondo from '../assets/Components/Fondo'
+
 const PaginaInicio = () => {
     return(
         <>
-            <h1 className={Page__InicioStyle.prueba}>Desarrollo de Componentes con React</h1>
-            <p>Estos son algunos de los componentes que desarrolle</p>
-            <div className='content'>
-                <Link to='/TarjetaPedido' className={Page__InicioStyle.content__components}></Link>
-                <a className='content__components'></a>
-                <a className='content__components'></a>
-                <a className='content__components'></a>
-                <a className='content__components'>Proximamente</a>
-            </div>
+            <Fondo/>
+            <section className={StylePage__Inicio.section}>
+                <h1 className={StylePage__Inicio.title}>Desarrollo de Componentes con React</h1>
+                <p className={StylePage__Inicio.description}>Estos son algunos de los componentes que desarrolle</p>
+                <div className={StylePage__Inicio.content}>
+                    <Link to='/Components/ResumenPedido' className={StylePage__Inicio.content__components}></Link>
+                    <Link to='/Components/CodigoQR' className={StylePage__Inicio.content__components}></Link>
+                    <Link to='/Components/TarjetaDeProducto' className={StylePage__Inicio.content__components}></Link>
+                    <Link to='/Components/TarjetaNFT' className={StylePage__Inicio.content__components}></Link>
+                    <div className={StylePage__Inicio.content__components}>Proximamente</div>
+                </div>
+            </section>
         </>
     );
 };

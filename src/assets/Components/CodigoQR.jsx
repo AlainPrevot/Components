@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import '../../style/CodigoQR.css'
+import StyleCodigoQR from './style/CodigoQR.module.sass'
 import PropTypes from 'prop-types';
 
 
 const CodigoQR = ({title, description, image}) => {
     return(
-        <div className='content'>
-            <img src={image} alt="CodeQR" className='codeQR'/>
-            <h1>{title}</h1>
-            <p>{description}</p>
+        <div className={StyleCodigoQR.content}>
+            <img src={image} alt="CodeQR" className={StyleCodigoQR.content__codeQR}/>
+            <h1 className={StyleCodigoQR.content__title}>{title}</h1>
+            <p className={StyleCodigoQR.content__description}>{description}</p>
         </div>
     )
 }

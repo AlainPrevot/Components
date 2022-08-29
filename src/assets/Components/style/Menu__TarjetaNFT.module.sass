@@ -1,0 +1,64 @@
+@use './Menu.sass'
+.menu__box
+
+    h1
+        color: white
+        font-size: 2.2rem
+        margin-bottom: 6%
+
+    label
+        color: white
+        display: inline-block
+        font-size: 14px
+        margin-top: 20px
+        text-align: left
+        width: 96%
+
+    textarea, input
+        border-radius: 6px
+        box-sizing: border-box
+        font-size: 14px
+        min-width: 100% 
+        padding: 6px
+
+    select
+        border-radius: 6px
+        height: 38px
+        padding: 2px 10px
+
+.title, .time, .user
+    resize: none
+    max-height: 38px
+.item, .price
+    border: none
+
+.menu__box__content
+    display: grid
+    grid-template-columns: 1fr 30%
+    grid-template-rows: 1fr 1fr
+
+.price, select
+    grid-row: 2/3
+
+.price, .title
+    grid-column: 1/2
+    min-width: 100%
+
+select, .item
+    grid-column: 2/3
+
+.label__price, .label__moneda, .label__title, .label__item
+    grid-row: 1/2
+
+.label__price, .label__title
+    grid-column: 1/2
+
+.label__money, .label__item
+    grid-column: 2/3 
+
+.description
+    min-height: 100px
+ 
+@media only screen and (max-width: 420px)
+    .menu__box
+        background-color: rgba(0,0,0,.8)

@@ -1,20 +1,10 @@
-// import React from 'react'
-// import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+
 import Inicio from './pages/inicio'
 import Page__TarjetaResumenPedido from './pages/Page__TarjetaResumenPedido'
+import Page__CodigoQR from './pages/Page__CodigoQR'
+import Page__TarjetaDeProducto from './pages/Page__TarjetaDeProducto'
+import Page__TarjetaNFT from './pages/Page__TarjetaNFT'
 
-// const App = () => {
-//     return(
-//         <Router>
-//             {/* <Routes path='/inicio' component={Inicio}/> */}
-//             {/* <Routes path='/Inicio/TarjetaResumenPedido' component={Page__TarjetaResumenPedido}/> */}
-
-//             <Routes>
-//                 <Route path="/inicio"><Inicio/></Route>
-//             </Routes>
-//         </Router>
-//     )
-// }
 import React from 'react'
 import ReactDOM from "react-dom/client";
 import {
@@ -22,8 +12,6 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
-import Prueba from "./prueba";
-import Invoices from "./routes/invoices.jsx";
 
 
 const App = () => {
@@ -32,7 +20,10 @@ const App = () => {
         <BrowserRouter>
             <Routes>
                 <Route exact path='/Components' element={<Inicio/>}/>
-                <Route exact path='/TarjetaPedido' element={<Page__TarjetaResumenPedido/>}/>
+                <Route exact path='/Components/ResumenPedido' element={<Page__TarjetaResumenPedido/>}/>
+                <Route exact path='/Components/CodigoQR' element={<Page__CodigoQR/>}/>
+                <Route exact path='/Components/TarjetaDeProducto' element={<Page__TarjetaDeProducto/>}/>
+                <Route exact path='/Components/TarjetaNFT' element={<Page__TarjetaNFT/>}/>
             </Routes>
         </BrowserRouter>
     )

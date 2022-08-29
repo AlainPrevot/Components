@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import '../../style/Fondo.css'
+import StyleFondo from './style/Fondo.module.sass'
 
 
 const Fondo = () => {
     return(
-        <div className='bubbles'>
-            <div className="bubble"></div>
-            <div className="bubble"></div>
-            <div className="bubble"></div>
-            <div className="bubble"></div>
-            <div className="bubble"></div>
+        <div className={StyleFondo.bubbles}>
+            <div className={StyleFondo.bubble}></div>
+            <div className={StyleFondo.bubble}></div>
+            <div className={StyleFondo.bubble}></div>
+            <div className={StyleFondo.bubble}></div>
+            <div className={StyleFondo.bubble}></div>
         </div>
     )
 }

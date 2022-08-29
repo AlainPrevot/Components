@@ -1,29 +1,28 @@
 import {IconMusic, IllustrationHero} from "../icon/IconTarjetaResumenPedido.jsx";
-import '../../style/TarjetaResumenPedido.css';
+import StyleTarjetaResumenPedido from './style/TarjetaResumenPedido.module.sass';
 
 const TarjetaResumenPedido = ({title, description, price}) => {
     return(
+        <div className={StyleTarjetaResumenPedido.card}>
 
-        <div className="card">
+            <IllustrationHero className={StyleTarjetaResumenPedido.card__image}/>
 
-            <IllustrationHero className="card--image"/>
+            <div className={StyleTarjetaResumenPedido.card__content}>
 
-            <div className="card--content">
+                <h1 className={StyleTarjetaResumenPedido.card__title}>{title}</h1>
+                <p className={StyleTarjetaResumenPedido.card__description}>{description}</p>
 
-                <h1>{title}</h1>
-                <p>{description}</p>
+                <div className={StyleTarjetaResumenPedido.card__price}>
 
-                <div className="card--price">
-
-                    <IconMusic className="card--price__iconMusic"/>
+                    <IconMusic className={StyleTarjetaResumenPedido.card__price__iconMusic}/>
                     <h2>Plan Anual</h2>
                     <h3>{price}</h3>
                     <a href="">Cambiar</a>
 
                 </div>
 
-                <button className="card--content__btnProceed">Proceder al pago</button>
-                <button className="card--content__btnCancel">Cancelar</button>
+                <button className={StyleTarjetaResumenPedido.card__content__btnProceed}>Proceder al pago</button>
+                <button className={StyleTarjetaResumenPedido.card__content__btnCancel}>Cancelar</button>
 
             </div>
         </div>

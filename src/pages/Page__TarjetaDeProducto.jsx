@@ -6,7 +6,7 @@ import ProductoDesktop from '../assets/TarjetaProducto/ProductDesktop.jpg'
 import ProductMobile from '../assets/TarjetaProducto/ProductMobile.jpg'
 
 import TarjetaDeProducto from '../assets/Components/TarjetaDeProducto'
-import './style/Page__TarjetaDeProducto.css'
+import StylePage__TarjetaDeProducto from './style/Page__TarjetaDeProducto.module.sass'
 import Menu__TarjetaDeProducto from '../assets/Components/Menu__TarjetaDeProducto';
 
 
@@ -41,7 +41,7 @@ const Page__TarjetaDeProducto = () => {
     }
 
     return(
-        <>
+        <section className={StylePage__TarjetaDeProducto.section}>
             <TarjetaDeProducto
                 category={values.category}
                 title={values.title}
@@ -56,7 +56,7 @@ const Page__TarjetaDeProducto = () => {
                 PropNew={handleChange}
                 ImageNew={ModifyImage}
             />
-        </>
+        </section>
     );
 };
 

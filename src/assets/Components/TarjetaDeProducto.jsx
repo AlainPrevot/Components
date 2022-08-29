@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import PropTypes from 'prop-types';
-import '../../style/TarjetaDeProducto.css'
+import StyleTarjetaDeProducto from '../../assets/Components/style/TarjetaDeProducto.module.sass'
 
 
 const TarjetaDeProducto = ({category, title, description, price, discount, ImagenDesktop, ImagenMobile}) =>{
@@ -9,17 +9,17 @@ const TarjetaDeProducto = ({category, title, description, price, discount, Image
     const producto = screen.width > 460 ? ImagenDesktop : ImagenMobile;
 
     return(
-        <div className='card'>
+        <div className={StyleTarjetaDeProducto.card}>
             <img src={producto} alt="" />
-            <div className='card--content'>
+            <div className={StyleTarjetaDeProducto.card__content}>
                 <h3>{category}</h3>
                 <h1>{title}</h1>
                 <p>{description}</p>
-                <div className='card--content__price'>
-                    <h2 className='discount'>{discount}</h2>
-                    <h2 className='price'>{price}</h2>
+                <div className={StyleTarjetaDeProducto.card__content__price}>
+                    <h2 className={StyleTarjetaDeProducto.discount}>{discount}</h2>
+                    <h2 className={StyleTarjetaDeProducto.price}>{price}</h2>
                 </div>
-                <button>Añadir al Carrito</button>
+                <button className={StyleTarjetaDeProducto.button}>Añadir al Carrito</button>
             </div>
         </div>
     );

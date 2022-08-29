@@ -5,7 +5,7 @@ import {useState} from 'react';
 
 
 import TarjetaNFT from '../assets/Components/TarjetaNFT';
-import './style/Page__TarjetaNFT.css'
+import StylePage__TarjetaNFT from './style/Page__TarjetaNFT.module.sass'
 import Menu__TarjetaNFT from '../assets/Components/Menu__TarjetaNFT';
 
 
@@ -29,7 +29,7 @@ const Page__TarjetaNFT = () => {
     }
 
     return(
-        <>
+        <section className={StylePage__TarjetaNFT.section}>
             <TarjetaNFT
                 title={values.title}
                 item={values.item}
@@ -44,7 +44,7 @@ const Page__TarjetaNFT = () => {
                 TextNew={handleChange}
             />
 
-        </>
+        </section>
     );
 };
 

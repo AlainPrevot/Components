@@ -6,7 +6,7 @@ import {useState} from 'react';
 import CodigoQR from '../assets/Components/CodigoQR'
 import CodeQR from '../assets/QR-Linkdln.jpg'
 
-import './style/Page__CodigoQR.css'
+import StylePage__CodigoQR from './style/Page__CodigoQR.module.sass'
 import Menu__CodigoQR from '../assets/Components/Menu__CodigoQR';
 
 
@@ -36,7 +36,7 @@ const Page__CodigoQR = () => {
 
 
     return(
-        <>
+        <section className={StylePage__CodigoQR.section}>
             <CodigoQR 
                 image={ImageQRNew}
                 title={values.title}
@@ -47,7 +47,7 @@ const Page__CodigoQR = () => {
                 TextNew={handleChange}
                 ImageNew={ModifyImage}
             />
-        </>
+        </section>
     );
 };
 
