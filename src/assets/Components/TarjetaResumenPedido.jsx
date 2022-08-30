@@ -1,4 +1,4 @@
-import {IconMusic, IllustrationHero} from "../icon/IconTarjetaResumenPedido.jsx";
+import {IconMusic, IllustrationHero} from "../../image/TarjetaResumenPedido/IconTarjetaResumenPedido.jsx";
 import StyleTarjetaResumenPedido from './style/TarjetaResumenPedido.module.sass';
 
 const TarjetaResumenPedido = ({title, description, price}) => {

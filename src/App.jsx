@@ -1,5 +1,5 @@
 
-import Inicio from './pages/inicio'
+import Inicio from './pages/Page__Inicio'
 import Page__TarjetaResumenPedido from './pages/Page__TarjetaResumenPedido'
 import Page__CodigoQR from './pages/Page__CodigoQR'
 import Page__TarjetaDeProducto from './pages/Page__TarjetaDeProducto'

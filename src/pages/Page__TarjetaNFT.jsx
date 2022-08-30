@@ -7,6 +7,7 @@ import {useState} from 'react';
 import TarjetaNFT from '../assets/Components/TarjetaNFT';
 import StylePage__TarjetaNFT from './style/Page__TarjetaNFT.module.sass'
 import Menu__TarjetaNFT from '../assets/Components/Menu__TarjetaNFT';
+import Boton__Retroceso from '../assets/Components/Boton__Retroceso';
 
 
 const Page__TarjetaNFT = () => {
@@ -30,6 +31,7 @@ const Page__TarjetaNFT = () => {
 
     return(
         <section className={StylePage__TarjetaNFT.section}>
+            <Boton__Retroceso/>
             <TarjetaNFT
                 title={values.title}
                 item={values.item}

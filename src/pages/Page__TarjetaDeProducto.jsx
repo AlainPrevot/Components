@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {useState} from 'react';
 
-import ProductoDesktop from '../assets/TarjetaProducto/ProductDesktop.jpg'
-import ProductMobile from '../assets/TarjetaProducto/ProductMobile.jpg'
-
-import TarjetaDeProducto from '../assets/Components/TarjetaDeProducto'
 import StylePage__TarjetaDeProducto from './style/Page__TarjetaDeProducto.module.sass'
+import TarjetaDeProducto from '../assets/Components/TarjetaDeProducto'
 import Menu__TarjetaDeProducto from '../assets/Components/Menu__TarjetaDeProducto';
+import Boton__Retroceso from '../assets/Components/Boton__Retroceso';
+
+import ProductoDesktop from '../../src/image/TarjetaProducto/ProductDesktop.jpg'
+import ProductMobile from '../../src/image/TarjetaProducto/ProductMobile.jpg'
 
 
 const Page__TarjetaDeProducto = () => {
@@ -42,6 +43,7 @@ const Page__TarjetaDeProducto = () => {
 
     return(
         <section className={StylePage__TarjetaDeProducto.section}>
+            <Boton__Retroceso/>
             <TarjetaDeProducto
                 category={values.category}
                 title={values.title}

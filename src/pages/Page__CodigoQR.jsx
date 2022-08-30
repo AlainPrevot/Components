@@ -2,13 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {useState} from 'react';
 
-
-import CodigoQR from '../assets/Components/CodigoQR'
-import CodeQR from '../assets/QR-Linkdln.jpg'
-
 import StylePage__CodigoQR from './style/Page__CodigoQR.module.sass'
+import CodigoQR from '../assets/Components/CodigoQR'
 import Menu__CodigoQR from '../assets/Components/Menu__CodigoQR';
+import Boton__Retroceso from '../assets/Components/Boton__Retroceso';
 
+import CodeQR from '../../src/image/CodigoQR/QR-Linkdln.jpg'
 
 const Page__CodigoQR = () => {
 
@@ -37,6 +36,7 @@ const Page__CodigoQR = () => {
 
     return(
         <section className={StylePage__CodigoQR.section}>
+            <Boton__Retroceso/>
             <CodigoQR 
                 image={ImageQRNew}
                 title={values.title}

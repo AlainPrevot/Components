@@ -6,7 +6,7 @@ import StyleTarjetaNFT from './style/TarjetaNFT.module.sass'
 const TarjetaNFT = ({title, item, description, price, money, time, author}) => {
     return(
         <div className={StyleTarjetaNFT.card}>
-            <img className={StyleTarjetaNFT.card__image} src="../src/assets/TarjetaNFT/image-equilibrium.jpg" alt="imageEquilibrium" />
+            <img className={StyleTarjetaNFT.card__image} src="../../../src/image/TarjetaNFT/ImageEquilibrium.jpg" alt="imageEquilibrium" />
             <div className={StyleTarjetaNFT.card__content}>
                 <a>{title} #{item}</a>
                 <p>{description}</p>
@@ -16,7 +16,7 @@ const TarjetaNFT = ({title, item, description, price, money, time, author}) => {
                 </div>
             </div>
             <div className={StyleTarjetaNFT.card__content__user}>
-                <img className={StyleTarjetaNFT.avatar} src="../src/assets/TarjetaNFT/image-avatar.png" alt="imageAvatar" />
+                <img className={StyleTarjetaNFT.avatar} src="../../../src/image/TarjetaNFT/ImageAvatar.png" alt="imageAvatar" />
                 <h2>Creado por <a href="">{author}</a></h2>
             </div>
         </div>
