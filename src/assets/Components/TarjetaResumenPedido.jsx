@@ -1,5 +1,9 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import PropTypes from 'prop-types';
 import {IconMusic, IllustrationHero} from "../../image/TarjetaResumenPedido/IconTarjetaResumenPedido.jsx";
 import StyleTarjetaResumenPedido from './style/TarjetaResumenPedido.module.sass';
+
 
 const TarjetaResumenPedido = ({title, description, price}) => {
     return(
@@ -29,3 +33,9 @@ const TarjetaResumenPedido = ({title, description, price}) => {
     );
 };
 export default TarjetaResumenPedido;
+
+TarjetaResumenPedido.propTypes = {
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+}

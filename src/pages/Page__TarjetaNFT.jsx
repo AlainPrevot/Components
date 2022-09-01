@@ -34,9 +34,9 @@ const Page__TarjetaNFT = () => {
             <Boton__Retroceso/>
             <TarjetaNFT
                 title={values.title}
-                item={values.item}
+                item={parseInt(values.item)}
                 description={values.description}
-                price={values.price}
+                price={parseFloat(values.price)}
                 money={values.money}
                 time={values.time}
                 author={values.user}

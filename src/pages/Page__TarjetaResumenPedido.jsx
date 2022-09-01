@@ -11,7 +11,7 @@ const Page_TarjetaResumenPedido = () => {
             <TarjetaResumenPedido
                 title="Resumen del pedido"
                 description="Ahora puede escuchar millones de canciones, audiolibros y podcasts en cualquier dispositivo y en cualquier lugar que desee!"
-                price="59.99"
+                price={59.99}
             />
         </section>
     );
